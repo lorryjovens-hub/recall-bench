@@ -135,6 +135,17 @@ class HybridBackend:
             "features": getattr(self._tfidf, "max_features_", 0),
         }
 
+    def prewarm(self, contents: List[str]) -> None:
+        """预热语料：从底层后端加载既有内容（不写入底层）。
+
+        用于生产规模验证——让语义层面对真实库的噪声水平，而不是只
+        面对本次 probe 写入的少量条目。
+        """
+        self._contents = list(contents)
+        self._ids = list(range(1, len(contents) + 1))
+        self._dirty = True
+        self.rebuild()
+
 
 def _normalize(text: str) -> str:
     """轻量归一化：小写 + 空白折叠（保留中文）。"""
