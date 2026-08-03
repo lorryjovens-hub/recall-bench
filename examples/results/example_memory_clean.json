@@ -1,0 +1,246 @@
+{
+  "baseline": "recall_v0.1",
+  "tag": "EXAMPLE",
+  "mode": "clean",
+  "timestamp": "2026-08-03 00:52:56",
+  "total": 20,
+  "hits": 2,
+  "recall_rate": 0.1,
+  "avg_latency_ms": 0.0,
+  "write_ms_total": 0.1,
+  "by_domain": {
+    "习惯": {
+      "recall_rate": 0.0,
+      "total": 3,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "事件": {
+      "recall_rate": 0.0,
+      "total": 2,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "偏好": {
+      "recall_rate": 0.0,
+      "total": 1,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "兴趣": {
+      "recall_rate": 0.0,
+      "total": 1,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "技术": {
+      "recall_rate": 0.0,
+      "total": 4,
+      "hit": 0,
+      "avg_latency_ms": 0.1
+    },
+    "效率": {
+      "recall_rate": 1.0,
+      "total": 1,
+      "hit": 1,
+      "avg_latency_ms": 0.0
+    },
+    "目标": {
+      "recall_rate": 0.0,
+      "total": 3,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "观点": {
+      "recall_rate": 0.0,
+      "total": 1,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    },
+    "资源": {
+      "recall_rate": 1.0,
+      "total": 1,
+      "hit": 1,
+      "avg_latency_ms": 0.0
+    },
+    "项目": {
+      "recall_rate": 0.0,
+      "total": 3,
+      "hit": 0,
+      "avg_latency_ms": 0.0
+    }
+  },
+  "by_query_len": {
+    "short<=10": {
+      "total": 0,
+      "recall_rate": null
+    },
+    "long>10": {
+      "total": 20,
+      "recall_rate": 0.1
+    }
+  },
+  "per_item": [
+    {
+      "domain": "技术",
+      "query": "量子记忆压缩的能耗研究进展如何",
+      "query_len": 15,
+      "hit": false,
+      "latency_ms": 0.2,
+      "top_result": ""
+    },
+    {
+      "domain": "技术",
+      "query": "长期记忆的分层设计是怎样的",
+      "query_len": 13,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "习惯",
+      "query": "架构设计讨论一般在什么时间进行",
+      "query_len": 15,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "目标",
+      "query": "评测报告预计什么时候发布",
+      "query_len": 12,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "项目",
+      "query": "桌面端迁移到了什么框架",
+      "query_len": 11,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "资源",
+      "query": "新采购的 GPU 主要用在哪里",
+      "query_len": 15,
+      "hit": true,
+      "latency_ms": 0.0,
+      "top_result": "实验室采购了一批新的 GPU 用于推理加速（标记:EXAMPLE_05）"
+    },
+    {
+      "domain": "偏好",
+      "query": "界面配色上用户喜欢哪种风格",
+      "query_len": 13,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "事件",
+      "query": "错误反思模块迭代到第几轮了",
+      "query_len": 13,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "效率",
+      "query": "长上下文场景的 token 效率",
+      "query_len": 16,
+      "hit": true,
+      "latency_ms": 0.0,
+      "top_result": "长上下文场景下的 token 消耗明显下降（标记:EXAMPLE_08）"
+    },
+    {
+      "domain": "习惯",
+      "query": "记忆巩固任务在什么时候运行",
+      "query_len": 13,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "观点",
+      "query": "评估器应该放在循环里面还是外面",
+      "query_len": 15,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "项目",
+      "query": "编排层能不能并行回收子任务",
+      "query_len": 13,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "兴趣",
+      "query": "递归自我改进存在哪些安全边界",
+      "query_len": 14,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "事件",
+      "query": "会话记录同步到了哪些端",
+      "query_len": 11,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "技术",
+      "query": "记忆检索用的是什么策略",
+      "query_len": 11,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "目标",
+      "query": "新版本的代码生成能力提升多少",
+      "query_len": 14,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "项目",
+      "query": "跨平台数据同步调试得如何",
+      "query_len": 12,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "技术",
+      "query": "原型沙箱的文件保护方式",
+      "query_len": 11,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "习惯",
+      "query": "会议记录一般存放在哪里",
+      "query_len": 11,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    },
+    {
+      "domain": "目标",
+      "query": "认知架构对照笔记进展如何",
+      "query_len": 12,
+      "hit": false,
+      "latency_ms": 0.0,
+      "top_result": ""
+    }
+  ],
+  "backend": "memory"
+}
