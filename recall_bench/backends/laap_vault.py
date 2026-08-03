@@ -57,6 +57,25 @@ class LaapVaultBackend:
             for r in rows
         ]
 
+    def list_recent(self, limit: int = 2000) -> List[MemoryItem]:
+        """读取最近 N 条内容（语料预热用，只读）。"""
+        conn = self._vmodule._get_connection()
+        try:
+            rows = conn.execute(
+                "SELECT id, content, session_id, tags, timestamp "
+                "FROM conversations ORDER BY id DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        finally:
+            conn.close()
+        return [
+            MemoryItem(
+                id=r["id"], content=r["content"], session_id=r["session_id"],
+                tags=r["tags"], timestamp=str(r["timestamp"]),
+            )
+            for r in rows
+        ]
+
     def cleanup(self, ids: List[int], session_id: str = "") -> None:
         if not ids:
             return
